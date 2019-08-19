@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>ExpressGo - Car Rental Management System</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stroke.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+
+    <!-- CUSTOM -->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div class="container">
+
+            <section id="top" class="section docs-heading">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <h1>ExpressGo - v1.2</h1>
+                            <p class="lead">Car Rental Management System</p>
+                        </div>
+                        <!-- end title -->
+                    </div>
+                    <!-- end 12 -->
+                </div>
+                <!-- end row -->
+
+                <hr>
+
+            </section>
+            <!-- end section -->
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+                        <ul class="nav">
+                            <li><a href="#line1">Installer</a>
+                                <ul class="nav">
+                                    <li><a href="#line1_1">Step 1: Transfer files to your server</a></li>
+                                    <li><a href="#line1_2">Step 2: Administrator Settings</a></li>
+                                    <li><a href="#line1_3">Step 3: Setup ExpressGO</a></li>
+                                    <li><a href="#line1_4">Step 4: Add Branch</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line2">Vehicles</a>
+                                <ul class="nav">
+                                    <li><a href="#line2_1">Add vehicle</a></li>
+                                    <li><a href="#line2_2">Edit vehicle</a></li>
+                                    <li><a href="#line2_3">Delete vehicle</a></li>
+                                    <li><a href="#line2_4">Add vehicle class</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line3">Clients</a>
+                                <ul class="nav">
+                                    <li><a href="#line3_1">Add client</a></li>
+                                    <li><a href="#line3_2">Edit client</a></li>
+                                    <li><a href="#line3_3">Delete client</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line4">Agreement and Invoice</a>
+                                <ul class="nav">
+                                    <li><a href="#line4_1">Create a new Rental Agreement</a></li>
+                                    <li><a href="#line4_2">Print Agreement / Invoice</a></li>
+                                    <li><a href="#line4_3">Payments</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#line5">Manage rentals</a></li>
+                            <li><a href="#line9">Custom language</a></li>
+                            <li><a href="#line6">Installation Video Tutorial</a></li>
+                            <li><a href="#update01">Update</a></li>
+                            <li><a href="#update_12">Update 1.1 to 1.2</a></li>
+                            <li><a href="#line7">Sources and Credits</a></li>
+                            <li><a href="#line8">Support Desk</a></li>
+                        </ul>
+                    </nav >
+                </div>
+                <div class="col-md-9">
+                    <section class="welcome">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Introduction<hr></h2>
+                                <div class="row">
+
+                                    <div class="col-md-12 full">
+
+                                        <div>
+                                            <p>Thank you so much for purchasing ExpressGo</p>
+
+                                            <h4>Requirements</h4>
+                                            <p>ExpressGO was built on Codeigniter 3.1.3 which requires:</p>
+                                            <ol>
+                                                <li>PHP >= 5.6 or newer</li>
+                                                <li>OpenSSL PHP Extension</li>
+                                                <li>MySQLi PHP Extension</li>
+                                                <li>Mbstring PHP Extension</li>
+                                                <li>Tokenizer PHP Extension</li>
+                                            </ol>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- end row -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="line1" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Installer <a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <h4 id="line1_1">Step 1: Transfer files to your server</h4>
+
+
+                                <p>Please extract archive and copy all files & folders to your web server "www" directory.</p>
+
+                                <p>If you using Cpanel faster way is to upload zip on server via file manager and extract directly on server</p>
+                                <p>Enter your Base URL in /application/config/config.php </p>
+                                <pre>
+                                    $config['base_url'] = 'http://localhost/';
+                                </pre>
+                                <ul>
+                                    <li>1. Open web server public url or /install</li>
+
+                                    <li>2. Hostname - Enter MySQL Hostname (Default: localhost)</li>
+
+                                    <li>2. Database Username - Enter MySQL Database Username</li>
+
+                                    <li>3. Database Password - Enter MySQL Database Password</li>
+
+                                    <li> 4. Database Name - Enter MySQL Database Name (If not exists database, is created automatically</li>
+
+                                    <li>5. Click Install !</li>
+                                </ul>
+                            </p>
+
+                            <h4 id="line1_2">Step 2: Administrator Settings</h4>
+
+                            <p>1.Login - Not changed
+
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-exclamation-triangle"></i>Login: Admin
+                                    </p>
+                                </div>
+
+                                2. Password - Enter administrator password
+
+
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-exclamation-triangle"></i>Note: Password and confirm password should be same
+                                    </p>
+                                </div>
+                                3. Confirm Password - Enter administrator Confirm Password
+                                <br/>
+                                4. Click Confirm !
+                                <div class="intro2 clearfix">
+                                    <p><i class="fa fa-exclamation-triangle"></i>If you forget your password, you can view the MySQL admin table
+                                    </p>
+                                </div>
+                            </p>
+
+                            <h4 id="line1_3">Step 3: Setup ExpressGO</h4>
+
+                            <p><ul>
+                                <li>1.Company name - Enter your company name</li>
+
+                                <li>2.Adress - Enter your address</li>
+
+                                <li>3.Country - Enter your country</li>
+
+                                <li>4.City - Enter your city</li>
+
+                                <li>5.Langugae - Select your langugage</li>
+
+                                <li>6.Phone - Enter your phone number</li>
+
+                                <li>7.Tax - Enter your Tax percent. If there is no tax, enter 0</li>
+
+                                <li>8.Click Confirm!</li>
+                            </ul>
+                        </p>
+
+                        <h4 id="line1_4">Step 4: Add Branch</h4>
+                        <p>
+                            <ul>
+                                <li>1. Go to setup page</li>
+
+                                <li> 2. Enter Branch Name and click Add branch</li>
+                            </ul>
+                            <div class="intro2 clearfix">
+                                <p><i class="fa fa-exclamation-triangle"></i>If you don't have a branch, enter "Head office". Because must be at least one branch
+                                </p>
+                            </div>
+
+                        </p>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+            </section>
+            <!-- end section -->
+
+
+            <section id="line2" class="section">
+
+                <div class="row">
+                    <div class="col-md-12 left-align">
+                        <h2 class="dark-text">Vehicles <a href="#top">#back to top</a><hr></h2>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 id="line2_1">Add vehicle</h4>
+
+                        <p>Click on the “Add Vehicles” button on the main screen</p>
+                        <p><img class="img-responsive"  src="images/upload/P3rYXl9qDLvMBHIJzXedRw6sH4aWa5v349eD55jl.png"/></p>
+                        <p>Enter all fields of the vehicle so you have a complete description of all vehicles in your fleet.</p>
+
+
+                        <h4 id="line2_2">Edit vehicle</h4>
+
+                        <p>Click on the “Vehicles” button on the main screen.</p>
+                        <p>After click on the edit icon.</p>
+                        <p><img class="img-responsive"  src="images/upload/6W0jRZGt3Adrk5Fsjlk8XYKSQGXYreIG4CMrb54Y.png"/></p>
+
+                        <h4 id="line2_3">Delete vehicle</h4>
+
+                        <p>Click on the “Vehicles” button on the main screen.</p>
+                        <p>After click on the delete icon.</p>
+                        <p><img class="img-responsive"  src="images/upload/9v7tvKtgqO5EYlV3vZ3YTAiP54tmKzIO6jeZXxZ2.png"/></p>
+
+                        <h4 id="line2_4">Add vehicle class</h4>
+
+                        <p>Click on the “Setup” button on the main screen.</p>
+                        <p>After enter class name and press "Add" button</p>
+                        <p><img class="img-responsive"  src="images/upload/4WBUY45ss8hxAKP2fnsMcMg88b0jNTgYspeDKUih.png"/></p>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end section -->
+
+            <section id="line3" class="section">
+
+                <div class="row">
+                    <div class="col-md-12 left-align">
+                        <h2 class="dark-text">Clients <a href="#top">#back to top</a><hr></h2>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 id="line3_1">Add Client</h4>
+
+                        <p>Click on the “Add Client” button on the main screen.</p>
+                        <p><img class="img-responsive"  src="images/upload/iP9OHDn73nzA8cPEtGwo2Bb2LnroUwzYpMD3rDV7.png"/></p>
+                        <p>Enter all fields of the client so you have a complete description of all clients in your fleet.</p>
+
+                        <h4 id="line3_2">Edit Client</h4>
+
+                        <p>Click on the “Clients” button on the main screen.</p>
+                        <p>After click on the edit icon.</p>
+                        <p><img class="img-responsive"  src="images/upload/bEN9kxkGdVqK1SfI5jwaIEQKfdQDJncQN8myQyH2.png"/></p>
+
+                        <h4 id="line3_3">Delete Client</h4>
+
+                        <p>Click on the “Clients” button on the main screen.</p>
+                        <p>After click on the delete icon.</p>
+                        <p><img class="img-responsive"  src="images/upload/Obk0DrF6pMANu4rlgsrDAFF8JuT1vs2yqvGuC09U.png"/></p>
+                    </div>
+                </div>
+            </section>
+            <!-- end section -->
+
+            <section id="line4" class="section">
+
+                <div class="row">
+                    <div class="col-md-12 left-align">
+                        <h2 class="dark-text">Agreement and Invoice <a href="#top">#back to top</a><hr></h2>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 id="line4_1">Create a new Rental Agreement</h4>
+
+                        <p>
+                            <ul>
+                                <li>1. Click on the “New Agreement” button on the main screen</li>
+                            </ul>
+                            <img class="img-responsive"  src="images/upload/ylVVcZz8Zq7HoUq5GI9MQU8DTVWXU9ncJCgoiFnQ.png"/>
+                            <ul>
+                                <li>
+
+
+                                   <li>2. Set the Start Date and the End Date of the rental agreement.</li>
+
+                                   <li>3. Select Branch.</li>
+
+                                   <li>4. Select the vehicle of your choice.</li>
+
+                                   <li>5. Click the “Continue” button.</li>
+                               </ul>
+                           </p>
+                           <p><img class="img-responsive"  src="images/upload/7byRdgThtNdtJdmyjLv6annrP0S5ysN9pyjFKuaW.png"/></p>
+
+                           <p>The following sections:</p>
+                           <p>
+                               <ul>
+
+                                   <li>1.  Company name (use only Autocomplete)</li>
+
+                                   <li>2. First name (use only Autocomplete)</li>
+
+                                   <li>3. Last name  (use only Autocomplete)</li>
+
+
+
+                                   <li>4. Drivers -> Select driver</li>
+
+                                   <li>5. Rental Details-> Add deposit</li>
+
+                                   <li>6. Rates & Calculation - Auto calcluation rates with Vehicle informations</li>
+
+                                   <li>7. Fuel & Milage  -> Fuel and Odometer</li>
+
+                                   <li>8. Click "Confrim"</li>
+                               </ul>
+                           </p>
+
+
+
+
+                           <h4 id="line4_2">Print Agreement / Invoice</h4>
+
+                           <p>To print the invoice click the ‘Print Invoice’ button and print the agreement click the ‘Print Agreement’ button on the invoice screen</p>
+
+                           <p><img class="img-responsive"  src="images/upload/n8bTZJukT8iVLVJo6dpennKm0Uq9uddoL4AmVsp8.png"/></p>
+
+
+
+                           <h4 id="line4_3">Payments</h4>
+
+                           <p><b>Making Payments</b></p>
+                           <p>From this form you can make full or partial payments to the agreement. To make payments Click the “Make Payment” button.</p>
+
+
+                           <p><img class="img-responsive"  src="images/upload/CzH60Ghl8XPboxoNx1ZzNreS3A52Gt3HJYaBaF9q.png"/></p>
+
+                           <p><b>Deleting Payments</b></p>
+                           <p>To delete payments select payment and click on the Delete Payment button as shown below.</p>
+
+
+                           <p><img class="img-responsive"  src="images/upload/AsrV8qgt1FEAerfy8s5TFdjsPv83Xhh7inAdi0C3.png"/></p>
+
+                       </div>
+                   </div>
+
+               </section>
+               <!-- end section -->
+
+
+               <section id="line5" class="section">
+
+                <div class="row">
+                    <div class="col-md-12 left-align">
+                        <h2 class="dark-text">Manage rentals <a href="#top">#back to top</a><hr></h2>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <p><b>Vehicle On Rent</b></p>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p><img class="img-responsive"  src="images/upload/c4FW9d7bjNioPqwf0Y4BSnfHvdaLE3hFFuAOwGjh.png"/></p>
+
+                        <p>
+                            <ul>
+                                <li><b>Check in</b> - will check-in the vehicle of the selected item</li>
+                                <li><b>View Invoice</b> - where you can preview or print the invoice of the selected item.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+            </section>
+            <!-- end section -->
+
+            <section id="line9" class="section">
+
+                <div class="row">
+                    <div class="col-md-12 left-align">
+                        <h2 class="dark-text">Custom language <a href="#top">#back to top</a><hr></h2>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 id="line3_1">Add language</h4>
+
+                        <p>1. Copy folder in /application/language/english</p>
+                        <p>2. Change folder name (german, spanish etc.)</p>
+                        <p>3. Edit the expressgo_lang.php file with a text editor such as Notepad</p>
+                        <p>4. Copy file in /public/assets/js/lang/english.js</p>
+                        <p>5. Change file name (german, spanish etc.)</p>
+                        <p>6. Edit file with a text editor such as Notepad</p>
+                        <p>After go to ExpressGo setup and select own language</p>
+                    </div>
+                </div>
+            </section>
+            <!-- end section -->
+
+            <section id="line6" class="section">
+
+                <div class="row">
+                    <div class="col-md-12 left-align">
+                        <h2 class="dark-text">Installation Video Tutorial <a href="#top">#back to top</a><hr></h2>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mkXCWYhrA14" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                <!-- end row -->
+
+            </section>
+            <!-- end section -->
+
+            <section id="update01" class="section">
+
+                <div class="row">
+                    <div class="col-md-12 left-align">
+                        <h2 class="dark-text">Update<a href="#top">#back to top</a><hr></h2>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>If you want to go through a new version. You need to upgrade to a row</p>
+                        <p>Example: 1.0 to 1.2</p>
+                        <ul>
+                            <li>First: 1.0 to 1.1</li>
+                            <li>Second: 1.1 to 1.2</li>
+                        </ul>
+                        <p>This rule continues</p>
+                    </div>
+                </div>
+            </section>
+
+
+        <section id="update_12" class="section">
+
+            <div class="row">
+                <div class="col-md-12 left-align">
+                    <h2 class="dark-text">Update 1.1 to 1.2 <a href="#top">#back to top</a><hr></h2>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h4>Step 1: Transfer files to your server</h4>
+
+
+                    <p>Please extract archive and change all files & folders to your web server "www" directory.</p>
+
+                    <p>Enter your Base URL in /application/config/config.php </p>
+                    <pre>
+                        $config['base_url'] = 'http://localhost/';
+                    </pre>
+                    <ul>
+                        <li>1. Open web server /update/1.0-1.1.php</li>
+
+                        <li>2. Hostname - Enter MySQL Hostname (Default: localhost)</li>
+
+                        <li>2. Database Username - Enter MySQL Database Username</li>
+
+                        <li>3. Database Password - Enter MySQL Database Password</li>
+
+                        <li> 4. Database Name - Enter Current MySQL Database Name</li>
+
+                        <li>5. Click Update !</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <h4>Change Log</h4>
+                    <pre>version 1.2
+                       - [added] client optional information (pickup location,dropoff location, etc.)
+                       - [added] Change setup interface
+                       - [added] Discount function
+                       - [added] Greek and Azerbaijani languages
+                       - [fix] Agreement language problem
+                       - [fix] Login problem
+                       - [fix] Some bugs
+                   </pre>
+               </p>
+           </div>
+           <!-- end col -->
+       </div>
+       <!-- end row -->
+
+   </section>
+
+
+   <section id="line7" class="section">
+
+    <div class="row">
+        <div class="col-md-12 left-align">
+            <h2 class="dark-text">Sources and Credits <a href="#top">#back to top</a><hr></h2>
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- end row -->
+
+    <p>
+    I've used the following files and services as listed:</p>
+    <ol>
+        <li><a href="http://www.php.net">PHP</a></li>
+        <li><a href="http://ellislab.com/codeigniter">CodeIgniter</a></li>
+        <li><a href="http://www.jquery.com">jQuery</a></li>
+        <li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+        <li><a href="https://github.com/wenzhixin/bootstrap-table/">Bootstrap Table</a></li>
+        <li><a href="http://daneden.me/animate">Animate</a></li>
+        <li><a href="http://www.creative-tim.com/product/paper-dashboard">Paper Dashboard - by Creative Tim</a></li>
+        <li><a href="http://github.com/pawelczak">Easy Autocomplete</a></li>
+        <li><a href="http://fontawesome.io">Font Awesome</a></li>
+        <li><a href="https://fonts.googleapis.com/css?family=Muli:400,300">Google Fonts (Muli)</a></li>
+        <li><a href="http://www.position-absolute.com">jQuery printPage Plugin</a></li>
+        <li><a href="http://twitter.github.com/bootstrap/">sweetalert2</a></li>
+        <li><a href="https://github.com/mouse0270/bootstrap-growl">Bootstrap Notify</a></li>
+        <li><a href="https://github.com/surjithctly/documentation-html-template">Documentation</a></li>
+    </ol>               
+
+
+
+
+</section>
+<!-- end section -->
+
+<section id="line8" class="section">
+
+    <div class="row">
+        <div class="col-md-12 left-align">
+            <h2 class="dark-text">Support Desk <a href="#top">#back to top</a><hr></h2>
+        </div>
+        <!-- end col -->
+    </div>
+    <!-- end row -->
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul>
+                <li>1. <a href="https://codecanyon.net/user/mazzapp">Profile page</a></li>
+                <li>2. <a href="http://support.mazzapp.com">Help center & Create ticket</a></li>
+                <li>3. <a href="mailto:zeynaloffnet@gmail.com">zeynaloffnet@gmail.com</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- end row -->
+
+</section>
+</div>
+<!-- // end .col -->
+
+</div>
+<!-- // end .row -->
+
+</div>
+<!-- // end container -->
+
+</div>
+<!-- end wrapper -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/retina.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+
+<!-- CUSTOM PLUGINS -->
+<script src="js/custom.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/syntax-highlighter/scripts/shCore.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+<script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+
+</body>
+
+</html>

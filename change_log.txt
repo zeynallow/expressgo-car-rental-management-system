@@ -1,0 +1,15 @@
+version 1.1
+   - [added] multi-currency support
+   - [added] add custom vehicle class
+   - [fix] rental history client URL
+   - [fix] password empty
+   - [fix] tax value
+
+   version 1.2
+     - [added] client optional information (pickup location,dropoff location, etc.)
+     - [added] Change setup interface
+     - [added] Discount function
+     - [added] Greek and Azerbaijani languages
+     - [fix] Agreement language problem
+     - [fix] Login problem
+     - [fix] Some bugs
